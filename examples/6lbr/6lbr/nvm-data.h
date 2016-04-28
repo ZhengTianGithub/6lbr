@@ -183,13 +183,13 @@ typedef struct {
 #define CETIC_6LBR_NVM_DEFAULT_PANID                            0xABCD
 
 //IP64 Configuration
-#define CETIC_6LBR_NVM_DEFAULT_IP64_FLAGS               0
+#define CETIC_6LBR_NVM_DEFAULT_IP64_FLAGS               (CETIC_6LBR_IP64_DHCP + CETIC_6LBR_IP64_RFC6052_PREFIX)
 #define CETIC_6LBR_NVM_DEFAULT_IP64_ADDRESS(a)          uip_ipaddr(a, 172, 16, 0, 2)
 #define CETIC_6LBR_NVM_DEFAULT_IP64_NETMASK(a)          uip_ipaddr(a, 255, 255, 255, 0)
 #define CETIC_6LBR_NVM_DEFAULT_IP64_GATEWAY(a)          uip_ipaddr(a, 172, 16, 0, 1)
 
 //Version 1 configuration data
-#define CETIC_6LBR_NVM_DEFAULT_GLOBAL_FLAGS			0
+#define CETIC_6LBR_NVM_DEFAULT_GLOBAL_FLAGS			CETIC_GLOBAL_IP64
 
 //WSN Configuration
 #define CETIC_6LBR_NVM_DEFAULT_WSN_NET_PREFIX_LEN	64
