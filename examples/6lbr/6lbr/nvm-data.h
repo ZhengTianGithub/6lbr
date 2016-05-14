@@ -183,10 +183,10 @@ typedef struct {
 #define CETIC_6LBR_NVM_DEFAULT_PANID                            0xABCD
 
 //IP64 Configuration
-#define CETIC_6LBR_NVM_DEFAULT_IP64_FLAGS               (CETIC_6LBR_IP64_DHCP + CETIC_6LBR_IP64_RFC6052_PREFIX)
-#define CETIC_6LBR_NVM_DEFAULT_IP64_ADDRESS(a)          uip_ipaddr(a, 172, 16, 0, 2)
-#define CETIC_6LBR_NVM_DEFAULT_IP64_NETMASK(a)          uip_ipaddr(a, 255, 255, 255, 0)
-#define CETIC_6LBR_NVM_DEFAULT_IP64_GATEWAY(a)          uip_ipaddr(a, 172, 16, 0, 1)
+#define CETIC_6LBR_NVM_DEFAULT_IP64_FLAGS           (CETIC_6LBR_IP64_DHCP + CETIC_6LBR_IP64_SPECIAL_PORTS)
+#define CETIC_6LBR_NVM_DEFAULT_IP64_ADDRESS(a)      uip_ipaddr(a, 172, 16, 0, 2)
+#define CETIC_6LBR_NVM_DEFAULT_IP64_NETMASK(a)      uip_ipaddr(a, 255, 255, 255, 0)
+#define CETIC_6LBR_NVM_DEFAULT_IP64_GATEWAY(a)      uip_ipaddr(a, 172, 16, 0, 1)
 
 //Version 1 configuration data
 #define CETIC_6LBR_NVM_DEFAULT_GLOBAL_FLAGS			CETIC_GLOBAL_IP64
@@ -219,7 +219,7 @@ typedef struct {
 #define CETIC_6LBR_NVM_DEFAULT_RPL_DIO_REDUNDANCY		10
 #define CETIC_6LBR_NVM_DEFAULT_RPL_DEFAULT_LIFETIME		0x1E
 #define CETIC_6LBR_NVM_DEFAULT_RPL_MIN_HOP_RANK_INC		256
-#define CETIC_6LBR_NVM_DEFAULT_RPL_MAX_RANK_INC                 (7*256)
+#define CETIC_6LBR_NVM_DEFAULT_RPL_MAX_RANK_INC         (7*256)
 #define CETIC_6LBR_NVM_DEFAULT_RPL_LIFETIME_UNIT		0x0100
 #define CETIC_6LBR_NVM_DEFAULT_RPL_PREFERENCE                   0
 #define CETIC_6LBR_NVM_DEFAULT_RPL_DODAG_ID(a)                  uip_create_unspecified(a)
