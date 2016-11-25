@@ -16,7 +16,7 @@ ZOUL_ETH_GW_FW?=bin
 
 BOARD = eth-gw
 
-PROJECTDIRS += platform/zoul dev/enc28j60
+PROJECTDIRS += platform/zoul dev/enc28j60 dev/cc1200
 
 PROJECT_SOURCEFILES += zoul-init.c zoul-nvm.c enc28j60.c enc28j60-drv.c enc28j60-arch-$(CC2538_ENC28J60_ARCH).c
 

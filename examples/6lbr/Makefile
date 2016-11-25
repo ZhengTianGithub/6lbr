@@ -131,7 +131,7 @@ all_cc2538dk:
 	@echo "Target is deprecated, use 'make TARGET=cc2538dk all' instead"
 
 all_zoul-eth-gw:
-	@echo "Target is deprecated, use 'make TARGET=zoul-eth-gw all' instead"
+	@echo "Target is deprecated, use 'make TARGET=zoul all' instead"
 
 include $(CONTIKI)/Makefile.include
 
