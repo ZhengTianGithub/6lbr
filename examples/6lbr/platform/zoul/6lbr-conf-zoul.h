@@ -38,10 +38,10 @@
 #define SIXLBR_CONF_ZOUL_H
 
 /*------------------------------------------------------------------*/
-/* CC2538DK 6LBR                                                    */
+/* Zoul Ethernet router 6LBR pins and settings                      */
 /*------------------------------------------------------------------*/
 
-#define LOG6LBR_LEVEL_DEFAULT LOG6LBR_LEVEL_INFO
+#define LOG6LBR_LEVEL_DEFAULT           LOG6LBR_LEVEL_INFO
 
 #define LOG6LBR_SERVICE_DEFAULT         LOG6LBR_SERVICE_ALL
 
@@ -59,46 +59,46 @@
 
 #if WEBSERVER
 #undef UIP_CONF_DS6_NBR_NBU
-#define UIP_CONF_DS6_NBR_NBU     50
+#define UIP_CONF_DS6_NBR_NBU            50
 
 //Deprecated, for old DS6 Route API, use UIP_CONF_MAX_ROUTES instead
 #undef UIP_CONF_DS6_ROUTE_NBU
-#define UIP_CONF_DS6_ROUTE_NBU   50
+#define UIP_CONF_DS6_ROUTE_NBU          50
 
 #undef UIP_CONF_MAX_ROUTES
-#define UIP_CONF_MAX_ROUTES   50
+#define UIP_CONF_MAX_ROUTES             50
 
 #else
 #undef UIP_CONF_DS6_NBR_NBU
-#define UIP_CONF_DS6_NBR_NBU     100
+#define UIP_CONF_DS6_NBR_NBU            100
 
 //Deprecated, for old DS6 Route API, use UIP_CONF_MAX_ROUTES instead
 #undef UIP_CONF_DS6_ROUTE_NBU
-#define UIP_CONF_DS6_ROUTE_NBU   100
+#define UIP_CONF_DS6_ROUTE_NBU          100
 
 #undef UIP_CONF_MAX_ROUTES
-#define UIP_CONF_MAX_ROUTES   100
+#define UIP_CONF_MAX_ROUTES             100
 
-#endif
+#endif /* WEBSERVER */
 
-#define WEBSERVER_CONF_CFS_PATHLEN 1000
+#define WEBSERVER_CONF_CFS_PATHLEN      1000
 
 #define WEBSERVER_CONF_CFS_URLCONV      1
 
 #define WEBSERVER_CONF_CFS_CONNS        1
 
 #undef IEEE802154_CONF_PANID
-#define IEEE802154_CONF_PANID   0xABCD
+#define IEEE802154_CONF_PANID           0xABCD
 
 #undef NETSTACK_CONF_MAC
-#define NETSTACK_CONF_MAC     csma_driver
+#define NETSTACK_CONF_MAC               csma_driver
 
-#define CETIC_CSMA_STATS      0
+#define CETIC_CSMA_STATS                0
 
 #define CETIC_6LBR_LLSEC_WRAPPER        1
 
 #undef CETIC_6LBR_IP64
-#define CETIC_6LBR_IP64      1
+#define CETIC_6LBR_IP64                 1
 
 /* Do not change lines below */
 
@@ -106,10 +106,10 @@
 #undef UIP_CONF_LLH_LEN
 #define UIP_CONF_LLH_LEN 16
 
-#define LOG6LBR_TIMESTAMP           0
-#define LOG6LBR_STATIC              1
+#define LOG6LBR_TIMESTAMP               0
+#define LOG6LBR_STATIC                  1
 
 #undef NETSTACK_CONF_RDC
-#define NETSTACK_CONF_RDC     nullrdc_driver
+#define NETSTACK_CONF_RDC               nullrdc_driver
 
 #endif /* SIXLBR_CONF_ZOUL */

@@ -47,6 +47,7 @@
 #include "rom-util.h"
 
 #define CETIC_6LBR_NVM_SIZE 2048
+
 // We use the penultimate flash page as our nvm
 //TODO/ this must be updated for non 512K CC2538
 #define CETIC_6LBR_NVM_ADDRESS (0x00280000 - (2 * CETIC_6LBR_NVM_SIZE))
